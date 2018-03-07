@@ -39,7 +39,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres:///taehyoungram'),
+    'default': env.db('DATABASE_URL', default='postgres://kwon:fv3528no!@localhost:5432/taehyoungram'),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
@@ -63,14 +63,13 @@ DJANGO_APPS = [
     'django.contrib.admin',
 ]
 THIRD_PARTY_APPS = [
-    'crispy_forms',
-
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
 ]
 LOCAL_APPS = [
     'taehyoungram.users.apps.UsersConfig',
+    'taehyoungram.images.apps.ImagesConfig',
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
