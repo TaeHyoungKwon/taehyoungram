@@ -5,7 +5,10 @@ from django.utils.translation import ugettext_lazy as _
 
 
 class User(AbstractUser):
-    
+    '''
+    user_models
+    '''
+
     GENDER_CHOICES = (
         ('male','Male'),
         ('female','Female'),
