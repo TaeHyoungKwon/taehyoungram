@@ -16,7 +16,7 @@ urlpatterns = [
         view=views.ListAllComments.as_view(),
         name='all_comments',
     ),
-
+ 
     url(
         regex=r'^likes/$',
         view=views.ListAllLikes.as_view(),
